@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    // there is two class to call for document.getElementsByClassName
+    <p class="demo1"></p> //index number is 0 
+    <p class="demo1"></p>   //index number is 1
+
+    <script>
+        //1.prompt
+            //it gets value from the user
+            prompt("Enter Your Name");
+
+        //2.Alert
+            //it alert's the user to Note that
+            alert("check Your Number before proceed");
+
+        //3.confirm
+            //it makes confirmation from the user 
+            // cancel means 0 false 
+            // confirm means 1 True
+            confirm("confirm to login?");
+
+        //4.console.log 
+            //it gives output(result) in debug console
+            console.log("Wellcome to console"); 
+
+        //5.Document.write
+            // it gets the content in the html file
+            document.write("Hello World! in Html file"); 
+
+        //6.document.getElementById
+            // it prints the content in the html file whose id is mentioned
+            document.getElementById("demo").innerHTML="This text will print in html whose id is demo";
+            
+        //7.document.getElementsByClassName
+            // it prints the content in the html file whose class is mentioned with index Number
+            document.getElementsByClassName("demo1")[0].innerHTML="This text will print in html whose class is demo1 and index number is 1";
+    </script>
+</body>
+</html>
