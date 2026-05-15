@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p"></p>
+    <script>
+
+const name = 'uday'
+
+
+        const student = {
+            name:"uday",
+            surname:"patel",
+            wel : "Welcome to Empires Infotech" + name,
+            age : 18,
+            course: "MERN Stack Development",
+            batchTime:"3 to 5",
+            // fn : function (){
+            //     return this.name + this.surname
+            // }
+        }
+
+        let  txt = ""
+
+        for(let data in student){
+            txt += student. + "<br>"
+        }
+
+        document.write(txt)
+
+        let  para = document.getElementById('p')
+
+            para.innerHTML = JSON.stringify(student)
+
+
+        // student.name ="meet"
+
+
+
+        // alert(student)
+        // alert(student.fn())
+
+
+        // const product = {}
+
+        // product.name = 'one plus'
+
+        // alert(product.name)
+       
+    </script>
+</body>
+</html>

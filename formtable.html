@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" id="Form">
+        <input type="text" name="" id="name" placeholder="Name :"> <br>
+        <input type="email" id="email" placeholder="Email :">
+        <button id="submit"> submit </button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+
+        <tbody id="tbody">
+        </tbody>
+    </table>
+    <script>
+        let userForm = document.getElementById("Form")
+        let tablebody = document.getElementById("tbody")
+
+        userForm.addEventListener("submit", (stopReload) => {
+
+            stopReload.preventDefault();
+
+            let uname = document.getElementById("name").value;
+            let uemail = document.getElementById("email").value;
+
+            let row = `<tr>
+                        <td>${uname}</td>
+                        <td>${uemail}</td>
+                    </tr>`
+
+        tablebody.innerHTML += row;
+        });
+    </script>
+</body>
+
+</html>

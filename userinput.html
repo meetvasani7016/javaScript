@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select name="" id="color">
+        <option value="red">red</option>
+        <option value="black">blue</option>
+        <option value="green">green</option>
+    </select>
+
+    <script>
+
+
+
+        let opt = document.getElementById("color")
+        opt.addEventListener("change", () => {
+            let body = document.getElementsByTagName('body')[0]
+            if(opt.value == "red"){
+                body.style.backgroundColor="#555"
+            }else if(opt.value == "blue"){
+                body.style.backgroundColor=opt.value
+
+            }else{
+                body.style.backgroundColor=opt.value
+
+            }
+        })
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

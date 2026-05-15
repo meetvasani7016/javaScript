@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="pform">
+        <input type="text" id="pname" placeholder="Enter Name">
+        <input type="text" id="pprice" placeholder="Enter Price">
+        <input type="text" id="pdisc" placeholder="Enter Discription">
+
+        <button type="submit" >Submit</button>
+    </form>
+    <br><br>
+    <section id="psec" ></section>
+
+    <script>
+        let form = document.getElementById("pform");
+        let Name = document.getElementById("pname");
+        let price = document.getElementById("pprice");
+        let disc = document.getElementById("pdisc");
+        let sec = document.getElementById("psec");
+
+        form.addEventListener('submit', (stopreload) => {
+            stopreload.preventDefault()
+            let pcard = document.createElement("div");
+            let pnm = document.createElement("h1");
+            let ppr = document.createElement("h2");
+            let pdis = document.createElement("p");
+
+            pnm.innerHTML = Name.value;
+            ppr.innerHTML = price.value;
+            pdis.innerHTML = disc.value;
+            
+            if(Name.value!="" && price.value!="" && disc.value!=""){
+                sec.appendChild(pcard);
+                pcard.append(pnm, ppr, pdis);
+            }else{
+                alert("fill complete form")
+            }
+
+            form.reset()
+        })
+
+
+    </script>
+</body>
+
+</html>

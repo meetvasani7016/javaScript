@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <script>
+        let i, n, ans;
+        a = document.getElementsByTagName("h1");
+        n = parseInt(prompt("enter number"));
+        document.getElementsByTagName("h1")[0].innerHTML=`Table of ${n}`;
+        for (i = 1; i <= 10; i++) {
+            ans = n * i;
+            // console.log(`${n} * ${i} = ${ans}`);
+            a[i].innerHTML=(`${n} * ${i} = ${ans}`);
+        }
+    </script>
+</body>
+
+</html>

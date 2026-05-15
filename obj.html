@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+        let students = {
+            name : "Uday",
+            surname : "Patel",
+            age : 18,
+            course : "Web Dev",
+        }
+        document.write(students.name); //getting name from the object 
+        document.write(students.surname); //getting surname from the object 
+        document.write(students.age); //getting age from the object 
+        document.write(students.course); //getting course from the object
+
+        document.write(students); //getting type of the object
+
+        let data = JSON.stringify(students); //getting Whole object
+        document.write(data)
+
+        students.name = Meet; // Updating the Value of the key(name) 
+    </script>
+</body>
+</html>
